@@ -1,0 +1,46 @@
+@include foundation-top-bar;
+
+header {
+  @include grid-row;
+
+  nav {
+
+    @include breakpoint(medium up) {
+      @include grid-col(6);
+    }
+
+  }
+
+  .top-bar-left {
+
+    ul {
+
+      li {
+
+        a {
+          color: black;
+
+          @include breakpoint(medium up) {
+            line-height: 50px;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .logo {
+    text-align: center;
+    padding: 1em;
+    float: right;
+
+    @include breakpoint(small only) {
+      width: 100%;
+    }
+
+  }
+
+}
