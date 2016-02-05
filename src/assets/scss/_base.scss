@@ -1,6 +1,6 @@
 article.welcome {
+  @include grid-row($width: 50%);
   text-align: center;
-  width: 400px;
   margin: 0 auto;
   padding: 2em 0;
 

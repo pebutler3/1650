@@ -21,7 +21,7 @@ header {
           color: black;
 
           @include breakpoint(medium up) {
-            line-height: 50px;
+            line-height: 20px;
           }
 
         }
@@ -35,6 +35,7 @@ header {
   .logo {
     text-align: center;
     padding: 1em;
+    width: 250px;
     float: right;
 
     @include breakpoint(small only) {

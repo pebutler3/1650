@@ -1,0 +1,21 @@
+footer {
+  @include grid-row($width: 100%);
+  background: silver;
+  padding: 1em;
+  text-align: center;
+
+  ul {
+    list-style: none;
+    margin: 0;
+
+    @include breakpoint(medium up) {
+      @include grid-column(4);
+    }
+
+  }
+
+  p {
+    @include grid-col(12);
+  }
+
+}

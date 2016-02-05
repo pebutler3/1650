@@ -43,6 +43,7 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import "base";
-@import "components/top-bar";
-@import "components/hero";
+@import "base",
+        "components/top-bar",
+        "components/hero",
+        "components/footer";
