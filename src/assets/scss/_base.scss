@@ -51,3 +51,11 @@ article.calendar {
   }
 
 }
+
+article.login {
+  @include grid-row($width: 80%);
+  @include grid-col(8);
+  @include grid-column-position(center);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
