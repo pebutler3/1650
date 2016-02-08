@@ -92,7 +92,7 @@ $block-grid-max: 6;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Times New Roman', serif;
+$header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
