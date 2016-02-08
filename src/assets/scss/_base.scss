@@ -1,5 +1,4 @@
 article.welcome {
-  @include grid-row($width: 50%);
   text-align: center;
   margin: 0 auto;
   padding: 2em 0;
@@ -14,6 +13,12 @@ article.welcome {
       width: 2em;
       margin: 0 auto;
     }
+
+  }
+
+  @include breakpoint(medium up) {
+
+    @include grid-row($width: 50%);
 
   }
 
