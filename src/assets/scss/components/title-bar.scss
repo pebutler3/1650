@@ -1,0 +1,12 @@
+@include foundation-title-bar;
+
+.title-bar {
+  background: none;
+  color: #000;
+
+  .menu-icon:after {
+    background: #000;
+    box-shadow: 0 7px 0 #000, 0 14px 0 #000;
+  }
+
+}
