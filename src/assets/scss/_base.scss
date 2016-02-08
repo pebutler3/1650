@@ -23,3 +23,31 @@ article.welcome {
   }
 
 }
+
+article.calendar {
+  @include grid-row;
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+  section {
+    background: $gray;
+    padding: 1em;
+    color: $white;
+
+    h1 { font-size: 24px; }
+
+    @include breakpoint(medium up) {
+      @include grid-col(4);
+    }
+
+  }
+
+  iframe {
+
+    @include breakpoint(medium up) {
+      @include grid-col(8);
+    }
+
+  }
+
+}
