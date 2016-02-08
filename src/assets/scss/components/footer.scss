@@ -1,8 +1,9 @@
 footer {
   @include grid-row($width: 100%);
-  background: silver;
+  background: $gray;
   padding: 1em;
   text-align: center;
+  color: silver;
 
   ul {
     list-style: none;
@@ -12,10 +13,18 @@ footer {
       @include grid-column(4);
     }
 
+    @include breakpoint(small) {
+      margin-bottom: 1em;
+    }
+
   }
 
   p {
     @include grid-col(12);
+  }
+
+  a {
+    color: $white;
   }
 
 }
