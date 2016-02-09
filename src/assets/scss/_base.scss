@@ -59,3 +59,16 @@ article.login {
   margin-top: 2em;
   margin-bottom: 2em;
 }
+
+article.documents {
+  @include grid-row($width: 95%);
+
+  section {
+
+    @include breakpoint(medium up) {
+      @include grid-col(6);
+    }
+
+  }
+
+}
