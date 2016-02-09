@@ -4,6 +4,7 @@ header {
   @include grid-row;
 
   nav {
+    padding-bottom: 2em;
 
     @include breakpoint(medium up) {
       @include grid-col(6);
