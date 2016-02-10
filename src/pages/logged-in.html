@@ -1,26 +1,55 @@
 ---
 title: You are now logged in! • 1650 Pearl
+annuals:
+  - 2007
+  - 2008
+  - 2009
+  - 2010
+  - 2011
+  - 2012
+  - 2013
+  - 2014
+gov-docs: /assets/docs/gov/
+budgets:
+  - 2016
+bal-sheet:
+  - 2015
 ---
 <article class="documents">
   <h1>Community Documents</h1>
-  <section class="mins">
-    <h2>Minutes</h2>
+  <section class="annuals">
+    <h2>Annual Meetings</h2>
     <ul>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
+      {{#each annuals}}
+        <li><a href="{{root}}/assets/docs/annuals/{{this}}.pdf">{{this}}</a></li>
+      {{/each}}
     </ul>
   </section>
   <section class="gov-docs">
     <h2>Governing Documents</h2>
     <ul>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
+      <li><a href="{{root}}{{gov-docs}}bylaws.pdf">Bylaws</a></li>
+      <li><a href="{{root}}{{gov-docs}}decs.pdf">Declarations</a></li>
+      <li><a href="{{root}}{{gov-docs}}wc-decs.pdf"></a></li>
+      <li><a href="{{root}}{{gov-docs}}.pdf"></a></li>
+    </ul>
+  </section>
+</article>
+<article class="documents">
+  <section class="budgets">
+    <h2>Budgets</h2>
+    <ul>
+     {{#each budgets}}
+       <li><a href="{{root}}/assets/docs/budgets/{{this}}.pdf">{{this}}</a></li>
+     {{/each}}
+    </ul>
+  </section>
+  <section class="bal-sheet">
+    <h2>YTD Balance Sheets</h2>
+    <ul>
+     {{#each bal-sheet}}
+       <li><a href="{{root}}/assets/docs/bal-sheet/{{this}}.pdf">As of December {{this}}</a></li>
+     {{/each}}
     </ul>
   </section>
 </article>
