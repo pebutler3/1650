@@ -63,6 +63,11 @@ article.login {
 article.documents {
   @include grid-row($width: 95%);
 
+  h1 {
+    text-align: center;
+    padding: 1em;
+  }
+
   section {
 
     @include breakpoint(medium up) {
